@@ -3,8 +3,7 @@ A fully responsive 8-page website for Makeki Bakery, Nairobi.
 Built with HTML5, CSS3, JavaScript ES6+ and Bootstrap 5.
 
 ## Live Site
-https://MikeNgugi-hub.github.io/Makeki_Bakery
-
+https://github.com/MikeNgugi-Hub/Makeki_Bakery/
 ## Pages
 - Home · About · Menu · Gallery · Blog · Contact · FAQ · Reviews
 
