@@ -1,84 +1,264 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PAGE TITLE — Makeki Bakery</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
 <header>
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top" aria-label="Main navigation">
-<div class="container">
-<a class="navbar-brand" href="index.html">Makeki Bakery</a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-data-bs-target="#mainNav" aria-controls="mainNav"
-aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="mainNav">
-<ul class="navbar-nav ms-auto gap-1">
-<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-<li class="nav-item"><a class="nav-link" href="services.html">Menu</a></li>
-<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-<li class="nav-item"><a class="nav-link" href="testimonials.html">Reviews</a></li>
-<li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-</ul>
-<button id="darkToggle" class="btn btn-sm ms-3" aria-label="Toggle dark mode">
-<i class="bi bi-moon-fill"></i>
-</button>
-</div>
-</div>
-</nav>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Makeki Bakery</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#mainNav" aria-controls="mainNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="services.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimonials.html">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <button id="darkToggle" class="btn btn-sm ms-3" aria-label="Toggle dark mode">
+          <i class="bi bi-moon-fill"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
 </header>
+
 <main id="main-content">
-<!-- PAGE CONTENT HERE -->
+<section class="py-5 text-white text-center"
+  style="background:linear-gradient(135deg,#78350f,#b45309);">
+  <div class="container">
+    <h1>Our Menu</h1>
+    <p class="lead">Fresh every morning. Order by 5 pm for next-day collection.</p>
+  </div>
+</section>
+
+<section class="py-3 section-alt">
+  <div class="container">
+    <div class="row align-items-center g-3">
+      <div class="col-md-8">
+        <label for="menuSearch" class="visually-hidden">Search menu</label>
+        <input type="search" class="form-control" id="menuSearch"
+          placeholder="Search menu... e.g. sourdough, cake" aria-label="Search menu">
+      </div>
+      <div class="col-md-4 text-md-end">
+        <button class="btn btn-outline-amber d-md-none"
+          data-bs-toggle="offcanvas" data-bs-target="#filterSidebar">
+          <i class="bi bi-funnel-fill me-1"></i> Filter
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="filterSidebar"
+  aria-labelledby="filterLabel">
+  <div class="offcanvas-header">
+    <h5 id="filterLabel">Filter by Category</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="d-flex flex-column gap-2">
+      <button class="filter-btn btn btn-outline-secondary active" data-filter="all">All Items</button>
+      <button class="filter-btn btn btn-outline-secondary" data-filter="bread">Breads</button>
+      <button class="filter-btn btn btn-outline-secondary" data-filter="pastry">Pastries</button>
+      <button class="filter-btn btn btn-outline-secondary" data-filter="cake">Cakes</button>
+    </div>
+  </div>
+</div>
+
+<section class="py-3 d-none d-md-block">
+  <div class="container text-center">
+    <button class="filter-btn btn btn-outline-secondary me-2 active" data-filter="all">All</button>
+    <button class="filter-btn btn btn-outline-secondary me-2" data-filter="bread">Breads</button>
+    <button class="filter-btn btn btn-outline-secondary me-2" data-filter="pastry">Pastries</button>
+    <button class="filter-btn btn btn-outline-secondary" data-filter="cake">Cakes</button>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="row g-4" id="menuGrid">
+
+      <div class="col-md-4 menu-item" data-category="bread" data-name="classic sourdough">
+        <article class="card h-100">
+          <img src="assets/images/sourdough.jpg" class="card-img-top" alt="Classic sourdough loaf">
+          <div class="card-body">
+            <span class="badge mb-2" style="background:#b45309;">Bread</span>
+            <h3 class="h5">Classic Sourdough</h3>
+            <p class="small text-muted">72-hour fermented, stone-baked. 500g and 1kg.</p>
+            <p class="fw-bold">Ksh 580 / 1,050</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-4 menu-item" data-category="bread" data-name="baguette french">
+        <article class="card h-100">
+          <img src="assets/images/baguette.jpg" class="card-img-top" alt="French baguette">
+          <div class="card-body">
+            <span class="badge mb-2" style="background:#b45309;">Bread</span>
+            <h3 class="h5">French Baguette</h3>
+            <p class="small text-muted">Crispy crust, soft interior. Baked 7 am and 12 noon.</p>
+            <p class="fw-bold">Ksh 280</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-4 menu-item" data-category="bread" data-name="whole wheat loaf">
+        <article class="card h-100">
+          <img src="assets/images/whole-wheat.jpg" class="card-img-top" alt="Whole wheat loaf">
+          <div class="card-body">
+            <span class="badge mb-2" style="background:#b45309;">Bread</span>
+            <h3 class="h5">Whole Wheat Loaf</h3>
+            <p class="small text-muted">100% whole wheat, high fibre. Milled from Eldoret wheat.</p>
+            <p class="fw-bold">Ksh 420</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-4 menu-item" data-category="pastry" data-name="butter croissant">
+        <article class="card h-100">
+          <img src="assets/images/croissant.jpg" class="card-img-top" alt="Butter croissant">
+          <div class="card-body">
+            <span class="badge mb-2" style="background:#92400e;">Pastry</span>
+            <h3 class="h5">Butter Croissant</h3>
+            <p class="small text-muted">27-layer all-butter laminated dough. Made fresh daily.</p>
+            <p class="fw-bold">Ksh 180</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-4 menu-item" data-category="pastry" data-name="cinnamon roll">
+        <article class="card h-100">
+          <img src="assets/images/cinnamon-roll.jpg" class="card-img-top" alt="Cinnamon roll">
+          <div class="card-body">
+            <span class="badge mb-2" style="background:#92400e;">Pastry</span>
+            <h3 class="h5">Cinnamon Roll</h3>
+            <p class="small text-muted">Sri Lankan cinnamon, brown butter glaze. Saturday special.</p>
+            <p class="fw-bold">Ksh 220</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-4 menu-item" data-category="pastry" data-name="blueberry muffin">
+        <article class="card h-100">
+          <img src="assets/images/muffins.jpg" class="card-img-top" alt="Blueberry muffins">
+          <div class="card-body">
+            <span class="badge mb-2" style="background:#92400e;">Pastry</span>
+            <h3 class="h5">Blueberry Muffin</h3>
+            <p class="small text-muted">Fresh blueberries, lemon sugar crust on top.</p>
+            <p class="fw-bold">Ksh 150</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-4 menu-item" data-category="cake" data-name="birthday cake custom">
+        <article class="card h-100">
+          <img src="assets/images/birthday-cake.jpg" class="card-img-top" alt="Birthday cake">
+          <div class="card-body">
+            <span class="badge mb-2" style="background:#78350f;">Cake</span>
+            <h3 class="h5">Birthday Cake</h3>
+            <p class="small text-muted">Custom 3-layer sponge. Order 48 hours ahead.</p>
+            <p class="fw-bold">From Ksh 2,800</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-4 menu-item" data-category="cake" data-name="cheesecake new york">
+        <article class="card h-100">
+          <img src="assets/images/cheesecake.jpg" class="card-img-top" alt="New York cheesecake">
+          <div class="card-body">
+            <span class="badge mb-2" style="background:#78350f;">Cake</span>
+            <h3 class="h5">New York Cheesecake</h3>
+            <p class="small text-muted">Baked cheesecake on digestive biscuit base. Serves 8.</p>
+            <p class="fw-bold">Ksh 1,800</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-4 menu-item" data-category="cake" data-name="red velvet cupcakes">
+        <article class="card h-100">
+          <img src="assets/images/red-velvet.jpg" class="card-img-top" alt="Red velvet cupcakes">
+          <div class="card-body">
+            <span class="badge mb-2" style="background:#78350f;">Cake</span>
+            <h3 class="h5">Red Velvet Cupcakes</h3>
+            <p class="small text-muted">Moist red velvet with cream cheese frosting. Pack of 6.</p>
+            <p class="fw-bold">Ksh 800 / pack</p>
+          </div>
+        </article>
+      </div>
+
+    </div>
+    <div id="noResults" class="text-center py-5" style="display:none;">
+      <i class="bi bi-search fs-1 text-muted"></i>
+      <p class="mt-3 text-muted">No items found. Try a different search term.</p>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 text-center section-alt">
+  <div class="container">
+    <h2 class="mb-3">Bulk or Custom Order?</h2>
+    <p>We supply hotels, cafes and offices across Nairobi.</p>
+    <a href="contact.html" class="btn btn-amber btn-lg mt-3">Contact Us to Order</a>
+  </div>
+</section>
 </main>
+
 <footer class="site-footer" role="contentinfo">
-<div class="container">
-<div class="row g-4">
-<div class="col-lg-4">
-<h5>Makeki Bakery</h5>
-<p>Artisan bakes crafted with love in Nairobi since 2018.</p>
-</div>
-<div class="col-lg-2 col-6">
-<h5>Pages</h5>
-<ul class="list-unstyled">
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="services.html">Menu</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-</ul>
-</div>
-<div class="col-lg-2 col-6">
-<h5>More</h5>
-<ul class="list-unstyled">
-<li><a href="blog.html">Blog</a></li>
-<li><a href="testimonials.html">Reviews</a></li>
-<li><a href="faq.html">FAQ</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</div>
-<div class="col-lg-4">
-<h5>Visit Us</h5>
-<p><i class="bi bi-geo-alt-fill me-2"></i>14 Kimathi Street, Nairobi CBD</p>
-<p><i class="bi bi-clock-fill me-2"></i>Mon-Sat: 6 am - 7 pm</p>
-<p><i class="bi bi-telephone-fill me-2"></i>+254 712 345 678</p>
-<p><i class="bi bi-envelope-fill me-2"></i>hello@makekibakery.co.ke</p>
-</div>
-</div>
-<hr class="footer-divider">
-<p class="text-center small" style="color:#78716c;">
-&copy; 2026 Makeki Bakery. All rights reserved.
-</p>
-</div>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <h5>Makeki Bakery</h5>
+        <p>Artisan bakes crafted with love in Nairobi since 2018.</p>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h5>Pages</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h5>More</h5>
+        <ul class="list-unstyled">
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="testimonials.html">Reviews</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h5>Visit Us</h5>
+        <p><i class="bi bi-geo-alt-fill me-2"></i>14 Kariobangi Street, Nairobi CBD</p>
+        <p><i class="bi bi-clock-fill me-2"></i>Mon-Sat: 6 am - 7 pm</p>
+        <p><i class="bi bi-telephone-fill me-2"></i>+254 701 162 901</p>
+        <p><i class="bi bi-envelope-fill me-2"></i>hello@makekibakery.co.ke</p>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <p class="text-center small" style="color:#78716c;">
+      &copy; 2026 Makeki Bakery. All rights reserved.
+    </p>
+  </div>
 </footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>
