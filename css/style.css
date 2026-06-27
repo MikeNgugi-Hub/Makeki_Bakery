@@ -172,7 +172,7 @@ img { max-width: 100%; height: auto; display: block; }
   font-weight: 600; background: transparent;
   transition: all var(--transition);
 }
-.btn-outline-amber:hover { background: var(--clr-primary);
+.btn-tline-amber:hover { background: var(--clr-primary);}
 
 .gallery-item { cursor: pointer; }
 .gallery-item img {
