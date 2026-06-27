@@ -19,7 +19,6 @@ if (darkToggle) {
   }
 }
 
-/* ===== FEATURE 1: FORM VALIDATION ===== */
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
   contactForm.addEventListener('submit', function(e) {
@@ -71,7 +70,6 @@ if (contactForm) {
   });
 }
 
-/* ===== FEATURE 3a: GALLERY FILTER ===== */
 document.addEventListener('DOMContentLoaded', () => {
   const filterBtns   = document.querySelectorAll('.filter-btn');
   const galleryItems = document.querySelectorAll('.gallery-item');
@@ -99,7 +97,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-/* ===== MENU CATEGORY FILTER ===== */
 document.addEventListener('DOMContentLoaded', () => {
   const menuFilterBtns = document.querySelectorAll('.filter-btn');
   const menuItems = document.querySelectorAll('.menu-item');
@@ -120,7 +117,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-/* ===== FEATURE 3b: MENU LIVE SEARCH ===== */
 const menuSearch = document.getElementById('menuSearch');
 const menuItems  = document.querySelectorAll('.menu-item');
 const noResults  = document.getElementById('noResults');
@@ -139,7 +135,6 @@ if (menuSearch) {
   });
 }
 
-/* ===== GALLERY MODAL LIGHTBOX ===== */
 const imgModal = document.getElementById('imgModal');
 if (imgModal) {
   imgModal.addEventListener('show.bs.modal', e => {
@@ -161,7 +156,6 @@ if (imgModal) {
   });
 }
 
-/* ===== BOOTSTRAP TOOLTIPS ===== */
 document.addEventListener('DOMContentLoaded', () => {
   const tips = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
   tips.forEach(el => new bootstrap.Tooltip(el));
