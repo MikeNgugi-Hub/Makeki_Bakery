@@ -1,85 +1,220 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PAGE TITLE — Makeki Bakery</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAGE TITLE — Makeki Bakery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
 <header>
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top" aria-label="Main navigation">
-<div class="container">
-<a class="navbar-brand" href="index.html">Makeki Bakery</a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-data-bs-target="#mainNav" aria-controls="mainNav"
-aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="mainNav">
-<ul class="navbar-nav ms-auto gap-1">
-<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-<li class="nav-item"><a class="nav-link" href="services.html">Menu</a></li>
-<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-<li class="nav-item"><a class="nav-link" href="testimonials.html">Reviews</a></li>
-<li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-</ul>
-<button id="darkToggle" class="btn btn-sm ms-3" aria-label="Toggle dark mode">
-<i class="bi bi-moon-fill"></i>
-</button>
-</div>
-</div>
-</nav>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Makeki Bakery</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#mainNav" aria-controls="mainNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimonials.html">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+        </ul>
+        <button id="darkToggle" class="btn btn-sm ms-3" aria-label="Toggle dark mode">
+          <i class="bi bi-moon-fill"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
 </header>
+
 <main id="main-content">
-<!-- PAGE CONTENT HERE -->
+<!-- BANNER -->
+<section class="py-5 text-white text-center"
+  style="background:linear-gradient(135deg,#78350f,#b45309);">
+  <div class="container">
+    <h1>Get in Touch</h1>
+    <p class="lead">Order, ask, or just say hello. We reply within 2 hours.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="row g-5">
+
+      <!-- CONTACT FORM -->
+      <div class="col-lg-7">
+        <h2 class="mb-4">Send Us a Message</h2>
+        <div id="formSuccess" class="success-banner" role="alert" aria-live="polite">
+          <i class="bi bi-check-circle-fill me-2" style="color:#15803d;"></i>
+          <strong>Message sent!</strong> We will get back to you within 2 hours.
+        </div>
+        <form id="contactForm" novalidate>
+          <div class="row g-3">
+
+            <div class="col-sm-6">
+              <label for="contactName" class="form-label fw-semibold">
+                Full Name <span aria-hidden="true" style="color:red;">*</span></label>
+              <input type="text" class="form-control" id="contactName"
+                aria-required="true" placeholder="e.g. Amina Odhiambo">
+              <div id="contactNameError" class="error-msg" role="alert" aria-live="polite"></div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="contactEmail" class="form-label fw-semibold">
+                Email <span aria-hidden="true" style="color:red;">*</span></label>
+              <input type="email" class="form-control" id="contactEmail"
+                aria-required="true" placeholder="amina@example.com">
+              <div id="contactEmailError" class="error-msg" role="alert" aria-live="polite"></div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="contactPhone" class="form-label fw-semibold">Phone (optional)</label>
+              <input type="tel" class="form-control" id="contactPhone"
+                placeholder="+254 700 000 000">
+            </div>
+
+            <div class="col-sm-6">
+              <label for="contactSubject" class="form-label fw-semibold">
+                Subject <span aria-hidden="true" style="color:red;">*</span></label>
+              <select class="form-select" id="contactSubject" aria-required="true">
+                <option value="">Select a subject...</option>
+                <option>Place an Order</option>
+                <option>Custom Cake Enquiry</option>
+                <option>Wholesale / Supply</option>
+                <option>Feedback</option>
+                <option>Other</option>
+              </select>
+              <div id="contactSubjectError" class="error-msg" role="alert" aria-live="polite"></div>
+            </div>
+
+            <div class="col-12">
+              <label for="contactMessage" class="form-label fw-semibold">
+                Message <span aria-hidden="true" style="color:red;">*</span></label>
+              <textarea class="form-control" id="contactMessage" rows="5"
+                aria-required="true" placeholder="Tell us what you need..."></textarea>
+              <div id="contactMessageError" class="error-msg" role="alert" aria-live="polite"></div>
+            </div>
+
+            <div class="col-12">
+              <button type="submit" class="btn btn-amber btn-lg w-100">
+                <i class="bi bi-send-fill me-2"></i>Send Message
+              </button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+
+      <!-- CONTACT INFO -->
+      <div class="col-lg-5">
+        <h2 class="mb-4">Find Us</h2>
+
+        <div class="card p-3 mb-3">
+          <div class="d-flex gap-3">
+            <i class="bi bi-geo-alt-fill fs-4 mt-1" style="color:#b45309;"></i>
+            <div>
+              <h3 class="h6 fw-bold">Address</h3>
+              <p class="mb-0">14 Kimathi Street, Nairobi CBD</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-3 mb-3">
+          <div class="d-flex gap-3">
+            <i class="bi bi-clock-fill fs-4 mt-1" style="color:#b45309;"></i>
+            <div>
+              <h3 class="h6 fw-bold">Opening Hours</h3>
+              <p class="mb-0">Mon-Fri: 6:00 am - 7:00 pm<br>
+              Saturday: 6:00 am - 4:00 pm<br>Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-3 mb-3">
+          <div class="d-flex gap-3">
+            <i class="bi bi-telephone-fill fs-4 mt-1" style="color:#b45309;"></i>
+            <div>
+              <h3 class="h6 fw-bold">Phone</h3>
+              <p class="mb-0">+254 712 345 678</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-3 mb-4">
+          <div class="d-flex gap-3">
+            <i class="bi bi-envelope-fill fs-4 mt-1" style="color:#b45309;"></i>
+            <div>
+              <h3 class="h6 fw-bold">Email</h3>
+              <p class="mb-0">hello@makekibakery.co.ke</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ratio ratio-4x3 rounded overflow-hidden">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8!2d36.8219!3d-1.2841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d664e4d065!2sKimathi+St%2C+Nairobi!5e0!3m2!1sen!2ske"
+            style="border:0;" allowfullscreen loading="lazy"
+            title="Makeki Bakery location on Google Maps"></iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 </main>
+
 <footer class="site-footer" role="contentinfo">
-<div class="container">
-<div class="row g-4">
-<div class="col-lg-4">
-<h5>Makeki Bakery</h5>
-<p>Artisan bakes crafted with love in Nairobi since 2018.</p>
-</div>
-<div class="col-lg-2 col-6">
-<h5>Pages</h5>
-<ul class="list-unstyled">
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="services.html">Menu</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-</ul>
-</div>
-<div class="col-lg-2 col-6">
-<h5>More</h5>
-<ul class="list-unstyled">
-<li><a href="blog.html">Blog</a></li>
-<li><a href="testimonials.html">Reviews</a></li>
-<li><a href="faq.html">FAQ</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</div>
-<div class="col-lg-4">
-<h5>Visit Us</h5>
-<p><i class="bi bi-geo-alt-fill me-2"></i>14 Kimathi Street, Nairobi CBD</p>
-<p><i class="bi bi-clock-fill me-2"></i>Mon-Sat: 6 am - 7 pm</p>
-<p><i class="bi bi-telephone-fill me-2"></i>+254 712 345 678</p>
-<p><i class="bi bi-envelope-fill me-2"></i>hello@makekibakery.co.ke</p>
-</div>
-</div>
-<hr class="footer-divider">
-<p class="text-center small" style="color:#78716c;">
-&copy; 2026 Makeki Bakery. All rights reserved.
-</p>
-</div>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <h5>Makeki Bakery</h5>
+        <p>Artisan bakes crafted with love in Nairobi since 2018.</p>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h5>Pages</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h5>More</h5>
+        <ul class="list-unstyled">
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="testimonials.html">Reviews</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h5>Visit Us</h5>
+        <p><i class="bi bi-geo-alt-fill me-2"></i>14 Kimathi Street, Nairobi CBD</p>
+        <p><i class="bi bi-clock-fill me-2"></i>Mon-Sat: 6 am - 7 pm</p>
+        <p><i class="bi bi-telephone-fill me-2"></i>+254 712 345 678</p>
+        <p><i class="bi bi-envelope-fill me-2"></i>hello@makekibakery.co.ke</p>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <p class="text-center small" style="color:#78716c;">
+      &copy; 2026 Makeki Bakery. All rights reserved.
+    </p>
+  </div>
 </footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>
-</html>    
+</html>
