@@ -1,84 +1,253 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PAGE TITLE — Makeki Bakery</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAGE TITLE — Makeki Bakery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
 <header>
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top" aria-label="Main navigation">
-<div class="container">
-<a class="navbar-brand" href="index.html">Makeki Bakery</a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-data-bs-target="#mainNav" aria-controls="mainNav"
-aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="mainNav">
-<ul class="navbar-nav ms-auto gap-1">
-<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-<li class="nav-item"><a class="nav-link" href="services.html">Menu</a></li>
-<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-<li class="nav-item"><a class="nav-link" href="testimonials.html">Reviews</a></li>
-<li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-</ul>
-<button id="darkToggle" class="btn btn-sm ms-3" aria-label="Toggle dark mode">
-<i class="bi bi-moon-fill"></i>
-</button>
-</div>
-</div>
-</nav>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Makeki Bakery</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#mainNav" aria-controls="mainNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimonials.html">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <button id="darkToggle" class="btn btn-sm ms-3" aria-label="Toggle dark mode">
+          <i class="bi bi-moon-fill"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
 </header>
+
 <main id="main-content">
-<!-- PAGE CONTENT HERE -->
+
+  <section class="py-5 text-white text-center"
+  style="background:linear-gradient(135deg,#78350f,#b45309);">
+  <div class="container">
+    <h1>From the Bakery</h1>
+    <p class="lead">Recipes, baking tips, and news from Makeki.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4">
+        <article class="card h-100">
+          <img src="assets/images/sourdough.jpg" class="card-img-top" alt="Sourdough starter in a jar">
+          <div class="card-body d-flex flex-column">
+            <span class="badge mb-2" style="background:#b45309;width:fit-content;">Baking Tips</span>
+            <h2 class="h5">How to Keep Your Sourdough Starter Alive in Nairobi's Heat</h2>
+            <p class="small text-muted"><i class="bi bi-calendar3 me-1"></i>June 3, 2026</p>
+            <p class="small flex-grow-1">Nairobi's warm climate can be tricky for sourdough fermentation.
+            We share the fridge-and-feed schedule we've used for 8 years...</p>
+            <a href="#post1" class="btn btn-outline-amber btn-sm mt-3">Read More</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <article class="card h-100">
+          <img src="assets/images/birthday-cake.jpg" class="card-img-top" alt="Celebration cake at food festival">
+          <div class="card-body d-flex flex-column">
+            <span class="badge mb-2" style="background:#78350f;width:fit-content;">News</span>
+            <h2 class="h5">We Baked the Cake for the Nairobi Food Festival 2026</h2>
+            <p class="small text-muted"><i class="bi bi-calendar3 me-1"></i>May 18, 2026</p>
+            <p class="small flex-grow-1">Makeki was commissioned to create the centrepiece
+            celebration cake for the annual Nairobi Food Festival at the KICC...</p>
+            <a href="#post2" class="btn btn-outline-amber btn-sm mt-3">Read More</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <article class="card h-100">
+          <img src="assets/images/croissant.jpg" class="card-img-top" alt="Croissant layers being laminated">
+          <div class="card-body d-flex flex-column">
+            <span class="badge mb-2" style="background:#92400e;width:fit-content;">Recipe</span>
+            <h2 class="h5">The Secret to Perfect Croissants (and Why We Use Kenyan Butter)</h2>
+            <p class="small text-muted"><i class="bi bi-calendar3 me-1"></i>April 30, 2026</p>
+            <p class="small flex-grow-1">The lamination process for croissants is all about temperature.
+            In Nairobi's warmth we've adapted the French technique with Brookside butter...</p>
+            <a href="#post3" class="btn btn-outline-amber btn-sm mt-3">Read More</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <article class="card h-100">
+          <img src="assets/images/muffins.jpg" class="card-img-top" alt="Muffins on cooling rack">
+          <div class="card-body d-flex flex-column">
+            <span class="badge mb-2" style="background:#b45309;width:fit-content;">Baking Tips</span>
+            <h2 class="h5">5 Substitutions for Baking at High Altitude in Nairobi (1,795 m)</h2>
+            <p class="small text-muted"><i class="bi bi-calendar3 me-1"></i>March 12, 2026</p>
+            <p class="small flex-grow-1">Baking at Nairobi's altitude means lower pressure,
+            faster rising, and dry air. Here are the five adjustments we make to every recipe...</p>
+            <a href="#post4" class="btn btn-outline-amber btn-sm mt-3">Read More</a>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="post1">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <span class="section-label">Baking Tips</span>
+        <h2 class="section-title">How to Keep Your Sourdough Starter Alive in Nairobi's Heat</h2>
+        <p class="text-muted small mb-4">June 3, 2026 &nbsp;|&nbsp; By Wanjiku Mwangi</p>
+        <p>Nairobi sits at 1,795 metres with an average temperature of 19 degrees Celsius.
+        Your kitchen can easily reach 24-26 degrees during the day, which accelerates
+        fermentation dramatically. A starter that takes 12 hours to double in London
+        will double in 4-6 hours here.</p>
+        <h3 class="h5 mt-4">The Makeki Feeding Schedule</h3>
+        <p>We feed our starter every morning at 5 am using a 1:5:5 ratio (starter:flour:water).
+        We keep it in the fridge between feeds and take it out 45 minutes before the morning bake.
+        This cold retard method slows fermentation so you get flavour without over-fermentation.</p>
+        <a href="contact.html" class="btn btn-amber mt-3">Ask Us a Baking Question</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="post2">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <span class="section-label">News</span>
+        <h2 class="section-title">We Baked the Cake for the Nairobi Food Festival 2026</h2>
+        <p class="text-muted small mb-4">May 18, 2026 &nbsp;|&nbsp; By James Kamau</p>
+        <p>When the Nairobi Food Festival committee reached out to Makeki Bakery in March,
+        we knew this was a once-in-a-generation opportunity. The brief was simple —
+        create a centrepiece celebration cake for the annual festival at the KICC that
+        would represent the diversity and creativity of Nairobi's food scene.</p>
+        <h3 class="h5 mt-4">The Design Process</h3>
+        <p>James Kamau spent three weeks sketching designs before settling on a five-tier
+        sponge cake decorated with edible representations of Nairobi's iconic landmarks —
+        the KICC tower, Uhuru Park, and the Maasai Mara horizon. The cake served over
+        300 festival guests and received a standing ovation during the unveiling ceremony.</p>
+        <a href="contact.html" class="btn btn-amber mt-3">Order a Custom Cake</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="post3">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <span class="section-label">Recipe</span>
+        <h2 class="section-title">The Secret to Perfect Croissants (and Why We Use Kenyan Butter)</h2>
+        <p class="text-muted small mb-4">April 30, 2026 &nbsp;|&nbsp; By Wanjiku Mwangi</p>
+        <p>The lamination process for croissants is entirely about temperature control.
+        In Nairobi's warm climate, dough warms up quickly which causes the butter layers
+        to melt into the dough rather than staying separate. This destroys the 27 distinct
+        layers that make a croissant flaky.</p>
+        <h3 class="h5 mt-4">Why Brookside Butter Works</h3>
+        <p>After experimenting with imported European butters we discovered that Brookside
+        unsalted butter from Kiambu County has a higher melting point that suits Nairobi's
+        temperatures perfectly. We chill our dough between every fold and keep the kitchen
+        at 18 degrees during lamination. The result is a croissant with a shattering crust
+        and a honeycomb interior.</p>
+        <a href="contact.html" class="btn btn-amber mt-3">Visit Us to Try One</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="post4">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <span class="section-label">Baking Tips</span>
+        <h2 class="section-title">5 Substitutions for Baking at High Altitude in Nairobi</h2>
+        <p class="text-muted small mb-4">March 12, 2026 &nbsp;|&nbsp; By Wanjiku Mwangi</p>
+        <p>Nairobi sits at 1,795 metres above sea level. At this altitude atmospheric
+        pressure is lower which means gases expand faster, liquids evaporate more quickly,
+        and baked goods rise faster than they set. The result without adjustment is
+        collapsed cakes, dry muffins and dense bread.</p>
+        <h3 class="h5 mt-4">The 5 Adjustments We Make</h3>
+        <p><strong>1. Reduce baking powder by 15%</strong> — less leavening prevents
+        over-rising and collapsing.</p>
+        <p><strong>2. Increase liquid by 2 tablespoons per cup</strong> — replaces
+        moisture lost to faster evaporation.</p>
+        <p><strong>3. Raise oven temperature by 10 degrees</strong> — helps the structure
+        set before the rise gets out of control.</p>
+        <p><strong>4. Reduce sugar by 1 tablespoon per cup</strong> — sugar weakens
+        structure and needs less at altitude.</p>
+        <p><strong>5. Add an extra egg</strong> — strengthens the batter structure
+        to handle the faster rise.</p>
+        <a href="contact.html" class="btn btn-amber mt-3">Ask Us a Baking Question</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 </main>
+
 <footer class="site-footer" role="contentinfo">
-<div class="container">
-<div class="row g-4">
-<div class="col-lg-4">
-<h5>Makeki Bakery</h5>
-<p>Artisan bakes crafted with love in Nairobi since 2018.</p>
-</div>
-<div class="col-lg-2 col-6">
-<h5>Pages</h5>
-<ul class="list-unstyled">
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="services.html">Menu</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-</ul>
-</div>
-<div class="col-lg-2 col-6">
-<h5>More</h5>
-<ul class="list-unstyled">
-<li><a href="blog.html">Blog</a></li>
-<li><a href="testimonials.html">Reviews</a></li>
-<li><a href="faq.html">FAQ</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</div>
-<div class="col-lg-4">
-<h5>Visit Us</h5>
-<p><i class="bi bi-geo-alt-fill me-2"></i>14 Kimathi Street, Nairobi CBD</p>
-<p><i class="bi bi-clock-fill me-2"></i>Mon-Sat: 6 am - 7 pm</p>
-<p><i class="bi bi-telephone-fill me-2"></i>+254 712 345 678</p>
-<p><i class="bi bi-envelope-fill me-2"></i>hello@makekibakery.co.ke</p>
-</div>
-</div>
-<hr class="footer-divider">
-<p class="text-center small" style="color:#78716c;">
-&copy; 2026 Makeki Bakery. All rights reserved.
-</p>
-</div>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <h5>Makeki Bakery</h5>
+        <p>Artisan bakes crafted with love in Nairobi since 2018.</p>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h5>Pages</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h5>More</h5>
+        <ul class="list-unstyled">
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="testimonials.html">Reviews</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h5>Visit Us</h5>
+        <p><i class="bi bi-geo-alt-fill me-2"></i>14 Kariobangi Street, Nairobi CBD</p>
+        <p><i class="bi bi-clock-fill me-2"></i>Mon-Sat: 6 am - 7 pm</p>
+        <p><i class="bi bi-telephone-fill me-2"></i>+254 701 162 901</p>
+        <p><i class="bi bi-envelope-fill me-2"></i>hello@makekibakery.co.ke</p>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <p class="text-center small" style="color:#78716c;">
+      &copy; 2026 Makeki Bakery. All rights reserved.
+    </p>
+  </div>
 </footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>
