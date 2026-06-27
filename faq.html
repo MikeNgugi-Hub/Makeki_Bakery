@@ -1,84 +1,206 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PAGE TITLE — Makeki Bakery</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAGE TITLE — Makeki Bakery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
 <header>
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top" aria-label="Main navigation">
-<div class="container">
-<a class="navbar-brand" href="index.html">Makeki Bakery</a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-data-bs-target="#mainNav" aria-controls="mainNav"
-aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="mainNav">
-<ul class="navbar-nav ms-auto gap-1">
-<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-<li class="nav-item"><a class="nav-link" href="services.html">Menu</a></li>
-<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-<li class="nav-item"><a class="nav-link" href="testimonials.html">Reviews</a></li>
-<li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-</ul>
-<button id="darkToggle" class="btn btn-sm ms-3" aria-label="Toggle dark mode">
-<i class="bi bi-moon-fill"></i>
-</button>
-</div>
-</div>
-</nav>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Makeki Bakery</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#mainNav" aria-controls="mainNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimonials.html">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <button id="darkToggle" class="btn btn-sm ms-3" aria-label="Toggle dark mode">
+          <i class="bi bi-moon-fill"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
 </header>
+
 <main id="main-content">
-<!-- PAGE CONTENT HERE -->
+<!-- BANNER -->
+<section class="py-5 text-white text-center"
+  style="background:linear-gradient(135deg,#78350f,#b45309);">
+  <div class="container">
+    <h1>Frequently Asked Questions</h1>
+    <p class="lead">Everything you want to know about Makeki Bakery.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <!-- GROUP 1 -->
+        <h2 class="h4 mb-3" style="color:#b45309;">Ordering and Delivery</h2>
+        <div class="accordion mb-4" id="faqOrder">
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button" type="button"
+                data-bs-toggle="collapse" data-bs-target="#faq1">
+                How do I place a custom cake order?
+              </button>
+            </h3>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqOrder">
+              <div class="accordion-body">Custom cake orders must be placed at least 48 hours in advance.
+              Fill in our <a href="contact.html">contact form</a>, select Custom Cake Enquiry,
+              and describe your design, size, and dietary needs. We call back within 2 hours
+              and collect a 50% deposit.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#faq2">
+                Do you deliver across Nairobi?
+              </button>
+            </h3>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqOrder">
+              <div class="accordion-body">Yes. Flat fee of Ksh 300 for orders above Ksh 2,000.
+              Delivery zones: Westlands, Karen, Kilimani, Lavington, CBD.
+              Order by 5 pm for next-day 7-10 am delivery.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#faq3">
+                What payment methods do you accept?
+              </button>
+            </h3>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqOrder">
+              <div class="accordion-body">We accept M-Pesa (Till No. 123456), cash, and bank
+              transfer for large orders. No card payments in-store at this time.</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- GROUP 2 -->
+        <h2 class="h4 mb-3" style="color:#b45309;">Products and Ingredients</h2>
+        <div class="accordion mb-4" id="faqProd">
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#faq4">
+                Do you offer gluten-free options?
+              </button>
+            </h3>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqProd">
+              <div class="accordion-body">We bake a dedicated gluten-free range every Tuesday and Friday
+              using certified gluten-free flour. Our kitchen does handle wheat flour so we cannot
+              guarantee zero cross-contamination for people with coeliac disease.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#faq5">
+                Where do you source your ingredients?
+              </button>
+            </h3>
+            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqProd">
+              <div class="accordion-body">Wheat from Eldoret Grain Millers. Butter and dairy from
+              Kiambu County cooperatives. Sri Lankan cinnamon, Madagascan vanilla, and fresh fruit
+              from Wakulima Market in Nairobi.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#faq6">
+                How long does sourdough stay fresh?
+              </button>
+            </h3>
+            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqProd">
+              <div class="accordion-body">3-4 days at room temperature in a cloth bag.
+              Do not refrigerate — cold air dries the crumb. Frozen and sliced it keeps
+              for up to 3 months.</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card p-4 text-center mt-2">
+          <h3 class="h5">Still have a question?</h3>
+          <p class="mb-3">Send us a message and we will reply within 2 hours.</p>
+          <a href="contact.html" class="btn btn-amber">Contact Us</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
 </main>
+
 <footer class="site-footer" role="contentinfo">
-<div class="container">
-<div class="row g-4">
-<div class="col-lg-4">
-<h5>Makeki Bakery</h5>
-<p>Artisan bakes crafted with love in Nairobi since 2018.</p>
-</div>
-<div class="col-lg-2 col-6">
-<h5>Pages</h5>
-<ul class="list-unstyled">
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="services.html">Menu</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-</ul>
-</div>
-<div class="col-lg-2 col-6">
-<h5>More</h5>
-<ul class="list-unstyled">
-<li><a href="blog.html">Blog</a></li>
-<li><a href="testimonials.html">Reviews</a></li>
-<li><a href="faq.html">FAQ</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</div>
-<div class="col-lg-4">
-<h5>Visit Us</h5>
-<p><i class="bi bi-geo-alt-fill me-2"></i>14 Kimathi Street, Nairobi CBD</p>
-<p><i class="bi bi-clock-fill me-2"></i>Mon-Sat: 6 am - 7 pm</p>
-<p><i class="bi bi-telephone-fill me-2"></i>+254 712 345 678</p>
-<p><i class="bi bi-envelope-fill me-2"></i>hello@makekibakery.co.ke</p>
-</div>
-</div>
-<hr class="footer-divider">
-<p class="text-center small" style="color:#78716c;">
-&copy; 2026 Makeki Bakery. All rights reserved.
-</p>
-</div>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <h5>Makeki Bakery</h5>
+        <p>Artisan bakes crafted with love in Nairobi since 2018.</p>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h5>Pages</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h5>More</h5>
+        <ul class="list-unstyled">
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="testimonials.html">Reviews</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h5>Visit Us</h5>
+        <p><i class="bi bi-geo-alt-fill me-2"></i>14 Kariobangi Street, Nairobi CBD</p>
+        <p><i class="bi bi-clock-fill me-2"></i>Mon-Sat: 6 am - 7 pm</p>
+        <p><i class="bi bi-telephone-fill me-2"></i>+254 701 162 901</p>
+        <p><i class="bi bi-envelope-fill me-2"></i>hello@makekibakery.co.ke</p>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <p class="text-center small" style="color:#78716c;">
+      &copy; 2026 Makeki Bakery. All rights reserved.
+    </p>
+  </div>
 </footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>
